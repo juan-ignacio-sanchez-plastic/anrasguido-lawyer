@@ -1,0 +1,51 @@
+.Service {
+  display: flex;
+  width: 45%;
+  height: 250px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+  background-color: white;
+  opacity: 0;
+  animation: displayService 2s 0.8s forwards;
+  
+  img {
+    width: 60%;
+    height: auto;
+    border-radius: 20px 3px 3px 20px;
+  }
+}
+
+.Service__body {
+  padding: 0 10px 10px 10px;
+
+  h1 {
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 30px;
+
+    li {
+      padding-bottom: 5px;
+
+      &:before {
+        content: '✓ ';
+        margin-left: -20px;
+      }
+    }
+  }
+}
+
+@keyframes displayService {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
