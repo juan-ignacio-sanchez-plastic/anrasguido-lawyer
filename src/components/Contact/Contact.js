@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <address className='Contact'>
       <ul>
-        <li>
+        <li className='Contact__phone'>
           <img
             src={whatsappLogo}
             width={24}
@@ -17,13 +17,15 @@ const Contact = () => {
           />
           11-3489-6281
         </li>
-        <li>
-          <img
-            src={emailLogo}
-            width={24}
-            alt='email'
-          />
-          rasguido@outlook.com
+        <li className='Contact__email'>
+          <a href="mailto: rasguido@outlook.com">
+            <img
+              src={emailLogo}
+              width={24}
+              alt='email'
+            />
+            rasguido@outlook.com
+          </a>
         </li>
       </ul>
     </address>
