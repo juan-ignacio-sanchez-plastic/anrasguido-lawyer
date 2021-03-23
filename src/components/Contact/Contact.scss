@@ -2,14 +2,27 @@
   font-size: 1.2rem;
   animation: displayMove 1s forwards;
   position: relative;
-
+  
   ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-
+    list-style: none;
+    
     li {
+      display: flex;
+      align-items: center;
       padding: 5px 30px;
+
+      img {
+        margin-right: 5px;
+        position: relative;
+        top: 1px;  
+      }
+    }
+    
+    li:last-child img {
+      top: 2px;
+      margin-right: 9px;
     }
   }
 }
