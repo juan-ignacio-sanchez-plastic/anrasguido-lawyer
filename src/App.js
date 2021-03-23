@@ -1,9 +1,8 @@
 import React from 'react';
 
-import { Name, Logo } from './components';
+import { Name, Logo, Contact } from './components';
 
 import './App.scss';
-import Contact from './components/Contact/Contact';
 
 function App () {
   return (
