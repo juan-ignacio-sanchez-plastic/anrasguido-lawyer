@@ -4,8 +4,7 @@
         "es2021": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "standard"
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -17,5 +16,19 @@
     "plugins": [
         "react"
     ],
-    "rules": {}
+    "rules": {
+        "no-console": "warn",
+        "indent": [
+            "error",
+            2
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
 }
