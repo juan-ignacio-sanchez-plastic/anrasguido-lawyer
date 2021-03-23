@@ -1,0 +1,26 @@
+.Contact {
+  font-size: 1.2rem;
+  animation: displayMove 1s forwards;
+  position: relative;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 5px 30px;
+    }
+  }
+}
+
+@keyframes displayMove {
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
