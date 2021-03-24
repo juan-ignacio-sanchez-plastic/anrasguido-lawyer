@@ -1,7 +1,7 @@
 .Service {
   display: flex;
-  width: 45%;
-  height: 250px;
+  flex-direction: column;
+  width: 100%;
   margin-bottom: 50px;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
@@ -12,9 +12,9 @@
   animation: displayService 2s 0.8s forwards;
   
   img {
-    width: 60%;
+    width: 100%;
     height: auto;
-    border-radius: 20px 3px 3px 20px;
+    border-radius: 20px 20px 5px 5px;
   }
 }
 
@@ -23,15 +23,20 @@
 
   h1 {
     margin: 0;
+    text-align: center;
   }
 
   ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     list-style: none;
     padding-left: 30px;
 
     li {
       padding-bottom: 5px;
+      text-align: center;
 
       &:before {
         content: '✓ ';
@@ -47,5 +52,48 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Service {
+    
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .Service {
+    flex-direction: row;
+    width: 45%;
+    height: 230px;
+    
+    img {
+      width: 45%;
+      border-radius: 20px 3px 3px 20px;
+    }
+
+    .Service__body {
+      h1 {
+        text-align: left;
+      }
+
+      ul {
+        align-items: flex-start;
+
+        li {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .Service {
+    height: 250px;
+
+    img {
+      width: 60%;
+    }
   }
 }

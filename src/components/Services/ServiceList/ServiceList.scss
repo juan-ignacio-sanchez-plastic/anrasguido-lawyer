@@ -1,9 +1,23 @@
 .ServiceList {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 50px 80px;
+  flex-direction: column;
+  padding: 50px 10px;
   background: #2193b0;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 17, 255, 0.1));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 17, 255, 0.1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media only screen and (min-width: 768px) {
+  .ServiceList {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .ServiceList {
+    padding: 50px 80px;
+  }
 }
