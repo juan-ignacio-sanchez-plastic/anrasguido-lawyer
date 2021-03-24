@@ -42,8 +42,8 @@ function App () {
         <Logo width={150} />
         <Name />
       </div>
+      <Contact />
       <div className='App__body'>
-        <Contact />
         <ServiceList services={SERVICSES} />
       </div>
     </div>
